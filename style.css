@@ -1,0 +1,402 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-width: 1000px;
+    height: 1800px;
+}
+@font-face {
+    font-family:'8bit-fina';
+    src: url('PixelOperator.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: '8bit';
+    src: url('8-bit Arcade in.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: '8bits';
+    src: url('8-bit Arcade Out.ttf') format('truetype');
+    font-weight: normal;
+}
+.showcase {
+    background-image: url('fundosite.jpg');
+    background-repeat: no-repeat;
+    width: 104%;
+    height: 1800px;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.425);
+    background-blend-mode: color;
+}
+
+navbar {
+    min-width: 750px;
+    width: 104%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position:absolute;
+    height: 100px;
+}
+navbar .navbar-container {
+    width: 90%;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-itens {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.navbar-item {
+    padding: 0 20px;
+    font-family: '8bit', times, serif;
+    font-size: 27px;
+    line-height: 2;
+    height: 60px;
+}
+#pokedex-navbar li:nth-child(1) {
+    border-right: 1px solid rgb(255, 255, 255);
+}
+#pokedex-navbar {
+    color: white;
+    text-decoration: none;
+}
+#pokedex-navbar-contatos {
+    color: white;
+    text-decoration: none;
+}
+.navbar-item:hover {
+    background: rgb(146, 53, 240);
+    transition: .6s;
+}
+.navbar-logo {
+    margin-bottom: 100%;
+    width:500px;
+    height: 80px;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.showcase-cabeçalho {
+    min-width: 500px;
+    position: absolute;
+    bottom: 75%;
+    right: 40px;
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: rgba(143, 112, 71, 0);
+    display:flex;
+    color: white;
+}
+.titulo-cabeçalho {
+    font-family: '8bit', times, serif;
+    font-style:normal;
+    font-size: 150px;
+    text-shadow: 6px 8px 10px black;
+}
+.showcase-sub-cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    position: absolute;
+    right: 12cm;
+    left: 0;
+    bottom: 40%;
+    margin: auto;
+    padding: 20px;
+    align-items: center;
+}
+.div-pesquisa {
+    border-radius: 40px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px;
+}
+.botao-pesquisa {
+    background-image: url('magnifying-glass-solid.svg');
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: 10px;
+    border-radius: 40px;
+    padding: 10px;
+    width: 50px;
+    height: 40px;
+    background-color:rgb(255, 255, 255);
+    border: none;
+}
+.pesquisa-sub-cabeçalho {
+    border-radius: 40px;
+    margin-right: auto;
+    font-size: 40px;
+    padding: 20px;
+    font-family: '8bit', times, serif;
+    height: 40px;
+    width: 350px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+.iconeinput {
+    width: 50px;
+    right: auto;
+}
+.gif-gengar {
+    width: 100%;
+}
+.imagem-sub-cabeçalho {
+    padding: 0.2cm;
+    height: auto;
+    width:auto;
+}
+.bugcatcher {
+    width: 100%;
+    height: auto;
+}
+.bugcatcher:hover {
+    width:95%
+}
+.showcase-infos-pokedex {
+    padding: 5px;
+    margin: auto;
+    width: 100%;
+    height: 1020px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -120%;
+    justify-content: space-between;
+    
+}
+.pokedex-main {
+    min-width: 900px;
+    width: 75%;
+    height: auto;
+    background-image:  url('pokedex-fechada.webp');
+    background-size: 54%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+}
+.infos1 {
+    font-family: '8bit-fina', times, serif;
+    font-size: 27px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 63px;
+    width: 373px;
+    height: 290px;
+    margin-top: 19%;
+}
+.infos2 {
+    margin-right:80px;
+    width: 350px;
+    height: 270px;
+    margin-top: 20%;
+    padding: 15px;
+    font-family: '8bit-fina', times, serif;
+    color:rgb(20, 216, 20);
+    font-size: 23px;
+}
+.pokedex-mapa {
+    background-color: rgba(51, 11, 71, 0.623);
+    width: 25%;
+    height: 125%;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.nome-pokemon {
+    width: 200px;
+    margin-top: 5px;
+    height:63px;
+    padding: 2px;
+}
+.id-pokemon {
+    margin-top: 5px;
+    width: 200px;
+    height:35px;
+    padding: 2px;
+}
+.tipo-pokemon {
+    margin-top: 5px;
+    width: 200px;
+    height:78px;
+    padding:2px;
+}
+.altura-pokemon {
+    margin-top: 5px;
+    width: 210px;
+    height:62px;
+    padding: 2px;
+}
+.peso-pokemon {
+    margin-top: 4px;
+    width: 290px;
+    height:31px;
+    padding: 2px;
+    margin-left: 30px;
+    font-size: 27px;
+}
+.imagem-poke {
+    height: 200px;
+    zoom: 120%;
+    margin-left: -130px;
+}
+.habilidade {
+    margin-bottom: 10px;
+}
+.habilidade-oculta {
+    margin-bottom: 10px;
+}
+.status-padrao {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.caixa-status {
+    display: flex;
+    justify-content: space-between;
+}
+.status1 {
+    width: 154px;
+    height: 135px;
+    padding: 25px;
+}
+.status2 {
+    width: 154px;
+    padding: 20px;
+}
+.mapa-h1 {
+    width: 100%;
+}
+.localizaçao {
+    margin-top: 20px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-family: '8bit-fina', times, serif;
+    font-size: 20px;
+    background-color:rgba(0, 0, 0, 0.37);
+    border-radius: 20px;
+}
+.locais {
+    text-shadow: 5px 5px 5px black;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(139, 100, 156);
+    margin-bottom: 5px;
+}
+.locais:hover {
+    background-color: rgb(189, 153, 204);
+}
+.div-pokedex-e-mapa {
+    display:flex;
+    height: 720px;
+}
+.container-mapa-pokemon {
+    display: flex;
+    padding: 20px;
+    height: 670px;
+    border-radius: 30px;
+    width: 73%;
+    background-color: rgba(51, 11, 71, 0.623);
+}
+.titulo-mapa {
+    width: 85%;
+}
+.div-mapa-pokemon {
+    border-style: dashed;
+    border-color: rgb(42, 3, 46);
+    padding: 1px;
+    width: 120%;
+    height: 550px;
+}
+.mapa-pokemon {
+    width: 100%;
+    height: 542px;
+}
+.div2-container-mapa-pokemon {
+    height: 600px;
+    margin-left: 175px;
+}
+.lista-pokemons-existentes {
+    border-radius: 25px;
+    background-color:rgba(0, 0, 0, 0.37);
+}
+.div-dos-pokemons {
+    display: flex;
+    border-bottom: 1px solid rgb(126, 79, 156);
+}
+.div-dos-pokemons:hover {
+    background-color: rgba(0, 0, 0, 0.37);
+}
+.nome-id {
+    font-family: '8bit-fina', times, serif;
+    color: white;
+    margin-top: 35px;
+}
+.titulo-localizaçao {
+    margin-top: 20px;
+    width: 100%;
+}
+.movimentos {
+    padding: 5px;
+    border-radius: 20px;
+    background-color:rgba(0, 0, 0, 0.37)
+}
+.div-move {
+    margin-bottom: 3px;
+    padding: 2px;
+    text-shadow: 5px 5px 5px black;
+    color: white;
+    font-size: 20px;
+    font-family:'8bit-fina', times, serif;
+    border-radius: 20px;
+    width: 100%;
+    background-color: rgb(167, 132, 182);
+}
+.div-move:hover {
+    background-color: rgb(198, 166, 211);
+}
+.rodape {
+    background-color: rgb(42, 3, 46);
+    width: 104%;
+    height: 240px;
+    display: flex;
+    justify-content: space-between;
+}
+.rodape-infos {
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 75px;
+    height:70px;
+    text-align: center;
+    width: 65%;
+    color:rgb(218, 218, 218);
+    font: normal 15pt arial;
+    background-color: rgb(56, 12, 65);
+}
+.imagem-titulo-locais {
+    width: 100%;
+}
+.imagem-movimentos {
+    width: 100%;
+}
+.imagem-locais {
+    width: 100%;
+}

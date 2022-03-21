@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TemosQuePegar!</title>
+</head>
+<body>
+    <navbar id ="navbar">
+        <div class="navbar-container">
+            <img src="logo-pokedex.png" alt="logo" class="navbar-logo">
+            <ul class="navbar-itens">
+                <a id = "pokedex-navbar" href=""><li class="navbar-item">Pokedex</li></a>
+                <a id="pokedex-navbar-contatos" href="https://www.linkedin.com/in/lucas-emanuel-7ab30122a/"><li class="navbar-item">Desenvolvedor</li></a>
+                <a id="pokedex-navbar-contatos" href="https://github.com/LuelYuuki"><li class="navbar-item">Github</li></a>
+            </ul>
+        </div>
+    </navbar>
+
+    <div class="showcase">
+        <header class = 'showcase-cabeçalho'>
+            <h1 class = 'titulo-cabeçalho'>
+                Pokédex
+            </h1>
+            <figure class = 'gif-cabeçalho'>
+                <img class="gif-gengar" src="https://i.kym-cdn.com/photos/images/original/000/609/431/335.gif" alt="">
+            </figure>
+        </header>
+
+        <div class ='showcase-sub-cabeçalho'>
+            <img class = 'iconeinput' src="icone-left-input.png" alt="">
+            <div class="div-pesquisa">
+                <input class = 'pesquisa-sub-cabeçalho' type="text" placeholder="Nome do pokémon..">
+                <button class="botao-pesquisa" onclick="buscar()">
+
+                </button>
+            </div>
+            <figure class = 'imagem-sub-cabeçalho'>
+                <img class = 'bugcatcher' src="bugcatcher.png" alt="">
+            </figure>
+        </div>
+    </div>
+    
+    <div class="showcase-infos-pokedex">
+        <div class = 'div-pokedex-e-mapa'>
+            <div class="pokedex-main">
+                <div class = 'infos1'>
+                    <ul>
+                        <p class = 'nome-pokemon'></p>
+                        <p class="id-pokemon"></p>
+                        <p class="tipo-pokemon"></p>
+                        <p class="altura-pokemon"></p>
+                        <p class="peso-pokemon"></p>
+                    </ul>
+                    <img class="imagem-poke" src="" alt="">
+                </div>
+
+                <div class="infos2">
+                    <p class="habilidade"></p>
+                    <p class="habilidade-oculta"></p>
+                    <p class="status-padrao"></p>
+                    <div class="caixa-status">
+                        <p class="status1"></p>
+                        <p class="status2"></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class ='pokedex-mapa'>
+                <div class="div-titulo-mapa">
+                    <img src="movimento.png" alt="" class="mapa-h1">
+                </div>
+                <div class="movimentos" style="overflow: scroll; width: 100%; height: 350px;">
+                    <img src="b902bf0319416561211f8524ff517bcb.gif" alt="" class="imagem-movimentos">
+                </div>
+                <div class = 'titulo-localizaçao'>
+                    <img src="locais.png" alt="" class="imagem-titulo-locais">
+                </div>
+                <div class="localizaçao" style="overflow: scroll; width: 100%; height: 400px;">
+                    <img src="imagem-localização.png" alt="" class="imagem-locais">
+                </div>
+            </div>
+        </div>
+
+        <div class="container-mapa-pokemon">
+            <div class="div1-container-mapa-pokemon">
+                <div class="div-titulo-mapa-pokemon">
+                    <img src="mapa.png" alt="" class="titulo-mapa">
+                </div>
+
+                <div class="div-mapa-pokemon">
+                    <img src="mapa-universo-pokemon.png" alt="" class="mapa-pokemon">
+                </div>
+            </div>
+
+            <div class="div2-container-mapa-pokemon">
+                <div class="lista-pokemons-existentes" style="overflow: scroll; width: 300px; height: 630px;">
+                
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="rodape">
+        <div class="rodape-infos">
+            Feito por fã para fãs sem fins lucrativos!<br>Pokémon e todos os nomes são marcas registradas &copy; de The Pokémon Company 1996-2022.
+        </div>
+        <div class="imagem-pikachu">
+            <img src="bbc6a2a769f1d71d401bcb50636b419a387a0fa4_hq.gif" alt="" class="pikachu">
+        </div>
+    </div>
+    
+    <script src="pokedex.js"></script>
+</body>
+</html>
