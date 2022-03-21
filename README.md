@@ -10,3 +10,4 @@ Foi desenvolvida por mim a fim de evoluir meus conhecimentos em js e no desenvol
 -Importação de fontes externas para personalização.
 -Comandos gerais CSS para a estilização HTML. 
 
+Link do site: https://luelyuuki.github.io/TemosQuePegar--Projeto-pokedex-online/
